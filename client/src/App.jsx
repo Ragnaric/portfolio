@@ -2,7 +2,7 @@ import React from 'react';
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className="underline font-bold text-red-900">App</div>
   );
 };
 
