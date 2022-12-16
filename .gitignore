@@ -1,0 +1,12 @@
+#dependencies
+/node_modules
+bundle.js
+
+#testing
+/coverage
+
+#production
+/build
+
+#Apple files
+.DS_Store
