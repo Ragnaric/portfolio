@@ -16,7 +16,7 @@ const Navigation = () => {
             window.scrollTo({top: 2000, behavior: 'smooth'});
           }}>Projects</div>
           <div className="inline-flex text-white hover:text-black hover:cursor-pointer" onClick={() => {
-            window.scrollTo({top: 3000, behavior: 'smooth'});
+            window.scrollTo({top: 3200, behavior: 'smooth'});
           }}>Contact</div>
         </div>
         <div className="inline-flex absolute text-white right-0 bottom-0 text-2xl hover:text-black hover:cursor-pointer" onClick={() => {
