@@ -938,6 +938,10 @@ html {
   width: 2.75rem;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -972,6 +976,10 @@ html {
 
 .min-w-\[80\%\] {
   min-width: 80%;
+}
+
+.min-w-\[33\%\] {
+  min-width: 33%;
 }
 
 .max-w-full {
@@ -1027,6 +1035,18 @@ html {
   max-width: 80%;
 }
 
+.max-w-\[33\%\] {
+  max-width: 33%;
+}
+
+.max-w-\[40\%\] {
+  max-width: 40%;
+}
+
+.max-w-\[25\%\] {
+  max-width: 25%;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1073,6 +1093,14 @@ html {
 
 .flex-nowrap {
   flex-wrap: nowrap;
+}
+
+.place-content-around {
+  place-content: space-around;
+}
+
+.place-content-evenly {
+  place-content: space-evenly;
 }
 
 .justify-center {
@@ -1299,6 +1327,10 @@ html {
 
 .text-\[2\.5vw\] {
   font-size: 2.5vw;
+}
+
+.text-\[1\.75vw\] {
+  font-size: 1.75vw;
 }
 
 .uppercase {
