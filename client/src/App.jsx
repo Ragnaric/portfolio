@@ -15,7 +15,7 @@ const App = () => {
     <div className="flex-col">
       <Navigation about={aboutRef} projects={projectsRef} contact={contactRef} />
       <Header />
-      <div ref={aboutRef} >
+      <div ref={aboutRef}>
         <About />
       </div>
       <div ref={projectsRef}>
