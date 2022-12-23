@@ -15,13 +15,13 @@ const App = () => {
     <div className="flex-col">
       <Navigation about={aboutRef} projects={projectsRef} contact={contactRef} />
       <Header />
-      <div ref={aboutRef}>
+      <div ref={aboutRef} className="snap-y snap-mandatory">
         <About />
       </div>
-      <div ref={projectsRef}>
+      <div ref={projectsRef} className="snap-y">
         <Projects />
       </div>
-      <div ref={contactRef}>
+      <div ref={contactRef} className="snap-y">
         <Contact />
       </div>
     </div>
