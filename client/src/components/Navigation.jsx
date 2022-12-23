@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navigation = () => {
+const Navigation = ({about, projects, contact}) => {
   return (
     <nav className="w-full fixed z-10 py-2.5 border-b bg-rose-800 top-0 leading-10">
       <div className="container flex-row space-x-12 m-auto w-11/12 relative text-center">
@@ -10,13 +10,13 @@ const Navigation = () => {
             window.scrollTo({top: 0, behavior: 'smooth'});
           }}>Home</div>
           <div className="inline-flex text-white hover:text-black hover:cursor-pointer" onClick={() => {
-            window.scrollTo({top: 1000, behavior: 'smooth'});
+            about.current.scrollIntoView({behavior: 'smooth', block: 'center'});
           }}>About</div>
           <div className="inline-flex text-white hover:text-black hover:cursor-pointer" onClick={() => {
-            window.scrollTo({top: 2000, behavior: 'smooth'});
+            projects.current.scrollIntoView({behavior: 'smooth', block: 'start'});
           }}>Projects</div>
           <div className="inline-flex text-white hover:text-black hover:cursor-pointer" onClick={() => {
-            window.scrollTo({top: 3200, behavior: 'smooth'});
+            contact.current.scrollIntoView({behavior: 'smooth', block: 'center'});
           }}>Contact</div>
         </div>
         <div className="inline-flex absolute text-white right-0 bottom-0 text-2xl hover:text-black hover:cursor-pointer" onClick={() => {
