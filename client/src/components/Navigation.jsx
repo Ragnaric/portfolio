@@ -22,6 +22,9 @@ const Navigation = ({about, projects, contact}) => {
         <div className="hidden lg:inline-flex lg:text-white lg:text-3xl lg:absolute lg:right-0 lg:bottom-0 lg:hover:text-black lg:hover:cursor-pointer" onClick={() => {
           window.open('./assets/Jonathan Navarrete Résumé.docx.pdf');
         }}>Resume</div>
+        <div className="inline-flex text-white text-3xl absolute right-0 hover:text-black hover:cursor-pointer lg:hidden" onClick={() => {
+          window.open('./assets/Jonathan Navarrete Résumé.docx.pdf');
+        }}>Menu</div>
       </div>
     </nav>
 
