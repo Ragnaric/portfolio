@@ -12,16 +12,16 @@ const App = () => {
   const contactRef = useRef(null);
 
   return (
-    <div className="flex-col">
+    <div className="flex-col snap-y snap-mandatory">
       <Navigation about={aboutRef} projects={projectsRef} contact={contactRef} />
       <Header />
-      <div ref={aboutRef} className="snap-y snap-mandatory">
+      <div ref={aboutRef} className="snap-start">
         <About />
       </div>
-      <div ref={projectsRef} className="snap-y">
+      <div ref={projectsRef} className="snap-start">
         <Projects />
       </div>
-      <div ref={contactRef} className="snap-y">
+      <div ref={contactRef} className="snap-start">
         <Contact />
       </div>
     </div>
