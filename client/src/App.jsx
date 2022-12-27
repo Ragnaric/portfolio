@@ -14,16 +14,16 @@ const App = () => {
   return (
     <div className="flex-col snap-y snap-mandatory overflow-scroll h-screen">
       <Navigation about={aboutRef} projects={projectsRef} contact={contactRef} />
-      <div ref={aboutRef} className="snap-center h-screen">
+      <div ref={aboutRef} className="flex snap-center h-screen">
         <Header />
       </div>
-      <div ref={aboutRef} className="snap-center h-screen">
+      <div ref={aboutRef} className="flex snap-center h-screen">
         <About />
       </div>
-      <div ref={projectsRef} className="snap-center h-screen">
+      <div ref={projectsRef} className="flex snap-center h-screen">
         <Projects />
       </div>
-      <div ref={contactRef} className="snap-center h-screen">
+      <div ref={contactRef} className="flex snap-center h-screen">
         <Contact />
       </div>
     </div>

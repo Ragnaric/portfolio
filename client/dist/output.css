@@ -701,6 +701,14 @@ html {
   margin-top: 0px;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-96 {
+  margin-top: 24rem;
+}
+
 .block {
   display: block;
 }
@@ -890,6 +898,14 @@ html {
   max-height: 5vw;
 }
 
+.max-h-\[40em\] {
+  max-height: 40em;
+}
+
+.max-h-\[30em\] {
+  max-height: 30em;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -1016,6 +1032,14 @@ html {
 
 .min-w-\[33\%\] {
   min-width: 33%;
+}
+
+.min-w-\[40em\] {
+  min-width: 40em;
+}
+
+.min-w-\[30em\] {
+  min-width: 30em;
 }
 
 .max-w-full {
@@ -1414,6 +1438,10 @@ html {
   padding-top: 12rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1476,6 +1504,11 @@ html {
 
 .text-\[1\.75vw\] {
   font-size: 1.75vw;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .uppercase {
