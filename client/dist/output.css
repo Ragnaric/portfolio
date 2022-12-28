@@ -741,6 +741,10 @@ html {
   margin-top: 500px;
 }
 
+.ml-0 {
+  margin-left: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1979,6 +1983,10 @@ html {
 
   .lg\:m-auto {
     margin: auto;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0px;
   }
 
   .lg\:inline-flex {

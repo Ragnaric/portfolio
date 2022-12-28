@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div className="flex-col snap-y snap-mandatory overflow-scroll h-screen">
-      <Navigation about={aboutRef} projects={projectsRef} contact={contactRef} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Navigation home={homeRef} about={aboutRef} projects={projectsRef} contact={contactRef} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} home={homeRef} about={aboutRef} projects={projectsRef} contact={contactRef} />
       <div ref={homeRef} className="flex snap-center h-screen">
         <Header />
