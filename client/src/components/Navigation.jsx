@@ -6,7 +6,10 @@ const Navigation = ({about, projects, contact, menuOpen, setMenuOpen}) => {
   return (
     <nav className="flex w-full fixed z-20 py-2.5 border-b bg-rose-800 leading-10 h-20">
       <div className="container flex flex-row space-x-12 m-auto w-11/12 relative text-center items-center">
-        <div className="inline-flex text-white text-3xl absolute left-0 lg:bottom-0">Jonathan Navarrete</div>
+        <div className="inline-flex text-white text-3xl absolute left-0 lg:hidden" onClick={() => {
+          window.open('./assets/Jonathan Navarrete Résumé.docx.pdf');
+        }}>Resume</div>
+        <div className="hidden lg:inline-flex lg:text-white lg:text-3xl lg:absolute lg:left-0 lg:bottom-0">Jonathan Navarrete</div>
         <div className="lg:container lg:flex-row lg:space-x-12 lg:m-auto lg:w-11/12 lg:text-center">
           <div className="hidden lg:inline-flex lg:text-white lg:text-xl lg:hover:text-black lg:hover:cursor-pointer" onClick={() => {
             window.scrollTo({top: 0, behavior: 'smooth'});
