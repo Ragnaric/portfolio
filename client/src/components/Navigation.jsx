@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const Navigation = ({about, projects, contact}) => {
 
-  const [isActive, setIsActive] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="flex w-full fixed z-10 py-2.5 border-b bg-rose-800 leading-10 h-20">
@@ -26,12 +26,12 @@ const Navigation = ({about, projects, contact}) => {
         <div className="hidden lg:inline-flex lg:text-white lg:text-3xl lg:absolute lg:right-0 lg:bottom-0 lg:hover:text-black lg:hover:cursor-pointer" onClick={() => {
           window.open('./assets/Jonathan Navarrete Résumé.docx.pdf');
         }}>Resume</div>
-        <div className="flex w-8 h-6 inline-flex flex-col space-y-2 text-white text-3xl absolute right-0 lg:hidden" onClick={() => {
-          setIsActive(!isActive);
+        <div className="flex w-8 h-6 inline-flex flex-col space-y-2.5 text-white text-3xl absolute right-0 lg:hidden" onClick={() => {
+          setMenuOpen(!menuOpen);
         }}>
-          <span className="w-full h-1 bg-white"></span>
-          <span className={`${!isActive ? 'w-full h-1 bg-white' : ''}`}></span>
-          <span className="w-full h-1 bg-white"></span>
+          <span className={`${!menuOpen ? '' : 'rotate-45'} w-full h-1 bg-white origin-left duration-[1500ms]`}></span>
+          <span className={`${!menuOpen ? 'w-full h-1 bg-white' : 'opacity-0'} duration-[1500ms]`}></span>
+          <span className={`${!menuOpen ? '' : '-rotate-45'} w-full h-1 bg-white origin-left duration-[1500ms]`}></span>
         </div>
       </div>
     </nav>
