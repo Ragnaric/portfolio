@@ -651,6 +651,22 @@ html {
   right: -18rem;
 }
 
+.-top-24 {
+  top: -6rem;
+}
+
+.-top-72 {
+  top: -18rem;
+}
+
+.-top-1\/3 {
+  top: -33.333333%;
+}
+
+.-top-1 {
+  top: -0.25rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -831,6 +847,22 @@ html {
 
 .h-\[300px\] {
   height: 300px;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-\[10vh\] {
+  height: 10vh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-\[30vh\] {
+  height: 30vh;
 }
 
 .max-h-fit {
@@ -1060,6 +1092,10 @@ html {
 
 .w-72 {
   width: 18rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .min-w-full {
@@ -1391,6 +1427,12 @@ html {
   --tw-space-y-reverse: 0;
   margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {

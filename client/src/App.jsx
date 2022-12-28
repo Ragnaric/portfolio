@@ -10,6 +10,7 @@ const App = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
@@ -17,8 +18,8 @@ const App = () => {
   return (
     <div className="flex-col snap-y snap-mandatory overflow-scroll h-screen">
       <Navigation about={aboutRef} projects={projectsRef} contact={contactRef} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu menuOpen={menuOpen} />
-      <div ref={aboutRef} className="flex snap-center h-screen">
+      <Menu menuOpen={menuOpen} home={homeRef} about={aboutRef} projects={projectsRef} contact={contactRef} />
+      <div ref={homeRef} className="flex snap-center h-screen">
         <Header />
       </div>
       <div ref={aboutRef} className="flex snap-center h-screen">
