@@ -647,6 +647,10 @@ html {
   top: 230px;
 }
 
+.-right-72 {
+  right: -18rem;
+}
+
 .z-10 {
   z-index: 10;
 }
