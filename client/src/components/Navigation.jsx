@@ -6,10 +6,9 @@ const Navigation = ({home, about, projects, contact, menuOpen, setMenuOpen}) => 
   return (
     <nav className="flex w-full fixed z-20 py-2.5 border-b bg-rose-800 leading-10 h-20">
       <div className="container flex flex-row m-auto w-11/12 relative text-center items-center">
-        <div className="inline-flex text-white text-3xl absolute left-0 lg:hidden" onClick={() => {
+        <div className="inline-flex text-white text-3xl absolute left-0 lg:hover:text-black lg:hover:cursor-pointer" onClick={() => {
           window.open('./assets/Jonathan Navarrete Résumé.docx.pdf');
         }}>Resume</div>
-        <div className="hidden lg:ml-0 lg:inline-flex lg:text-white lg:text-3xl lg:absolute lg:left-0 lg:bottom-0">Jonathan Navarrete</div>
         <div className="lg:container lg:flex-row lg:space-x-12 lg:m-auto lg:w-11/12 lg:text-center">
           <div className="hidden lg:inline-flex lg:text-white lg:text-xl lg:hover:text-black lg:hover:cursor-pointer" onClick={() => {
             home.current.scrollIntoView({behavior: 'smooth', block: 'center'});
@@ -24,9 +23,6 @@ const Navigation = ({home, about, projects, contact, menuOpen, setMenuOpen}) => 
             contact.current.scrollIntoView({behavior: 'smooth', block: 'center'});
           }}>Contact</div>
         </div>
-        <div className="hidden lg:inline-flex lg:text-white lg:text-3xl lg:absolute lg:right-0 lg:bottom-0 lg:hover:text-black lg:hover:cursor-pointer" onClick={() => {
-          window.open('./assets/Jonathan Navarrete Résumé.docx.pdf');
-        }}>Resume</div>
         <div className="flex w-8 h-6 inline-flex flex-col space-y-2.5 text-white text-3xl absolute right-0 lg:hidden" onClick={() => {
           setMenuOpen(!menuOpen);
         }}>

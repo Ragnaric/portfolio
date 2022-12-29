@@ -1030,6 +1030,10 @@ html {
   min-height: 30px;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1100,6 +1104,14 @@ html {
 
 .w-80 {
   width: 20rem;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .min-w-full {
@@ -1928,6 +1940,14 @@ html {
   .md\:inline-flex {
     display: inline-flex;
   }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:min-h-screen {
+    min-height: 100vh;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2003,6 +2023,10 @@ html {
 
   .lg\:max-h-\[550px\] {
     max-height: 550px;
+  }
+
+  .lg\:min-h-screen {
+    min-height: 100vh;
   }
 
   .lg\:w-11\/12 {
