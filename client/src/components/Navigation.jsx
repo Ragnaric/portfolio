@@ -4,9 +4,9 @@ import React from 'react';
 const Navigation = ({home, about, projects, contact, menuOpen, setMenuOpen}) => {
 
   return (
-    <nav className="flex w-full fixed z-20 py-2.5 border-b bg-rose-800 leading-10 h-20 md:max-lg:h-10">
+    <nav className="flex w-full fixed z-20 py-2.5 border-b bg-rose-800 leading-10 h-20 landscape:max-lg:h-10">
       <div className="container flex flex-row m-auto w-11/12 relative text-center items-center">
-        <div className="inline-flex text-white text-3xl md:max-lg:text-base absolute left-0 lg:hover:text-black lg:hover:cursor-pointer" onClick={() => {
+        <div className="inline-flex text-white text-3xl landscape:max-lg:text-base absolute left-0 lg:hover:text-black lg:hover:cursor-pointer" onClick={() => {
           window.open('./assets/Jonathan Navarrete Résumé.docx.pdf');
         }}>Resume</div>
         <div className="lg:container lg:flex-row lg:space-x-12 lg:m-auto lg:w-11/12 lg:text-center">
@@ -23,12 +23,12 @@ const Navigation = ({home, about, projects, contact, menuOpen, setMenuOpen}) => 
             contact.current.scrollIntoView({behavior: 'smooth', block: 'center'});
           }}>Contact</div>
         </div>
-        <div className="flex w-8 h-6 md:w-5 md:h-3 inline-flex flex-col space-y-2.5 md:space-y-1 absolute right-0 lg:hidden" onClick={() => {
+        <div className="flex w-8 h-6 landscape:w-3.5 landscape:h-3 inline-flex flex-col space-y-2.5 landscape:space-y-1 absolute right-0 lg:hidden" onClick={() => {
           setMenuOpen(!menuOpen);
         }}>
-          <span className={`${!menuOpen ? '' : 'rotate-45 md:rotate-[30deg]'} w-full h-1 bg-white origin-left duration-[1250ms]`}></span>
+          <span className={`${!menuOpen ? '' : 'rotate-45 landscape:rotate-45'} w-full h-1 bg-white origin-left duration-[1250ms]`}></span>
           <span className={`${!menuOpen ? 'w-full h-1 bg-white' : 'opacity-0'} duration-[1500ms]`}></span>
-          <span className={`${!menuOpen ? '' : '-rotate-45 md:-rotate-[30deg]'} w-full h-1 bg-white origin-left duration-[1250ms]`}></span>
+          <span className={`${!menuOpen ? '' : '-rotate-45 landscape:-rotate-45'} w-full h-1 bg-white origin-left duration-[1250ms]`}></span>
         </div>
       </div>
     </nav>
