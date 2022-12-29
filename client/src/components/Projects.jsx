@@ -9,8 +9,8 @@ const Projects = () => {
   });
 
   return (
-    <div className={`${inView ? 'transition-opacity' : 'opacity-0'} flex flex-col space-y-8 justify-center duration-[2000ms]`} ref={ref}>
-      <h1 className="w-1/2 m-auto text-rose-800 text-center text-[3vw] p-2 my-2">Projects</h1>
+    <div className={`${inView ? 'transition-opacity' : 'opacity-0'} max-w-[80%] m-auto justify-center duration-[2000ms]`} ref={ref}>
+      <h1 className="text-center text-5xl md:max-lg:text-3xl text-rose-800 p-4 my-2">Projects</h1>
       <ProjectCard />
     </div>
   );

@@ -4,7 +4,7 @@ import React from 'react';
 const Menu = ({menuOpen, home, about, projects, contact}) => {
 
   return (
-    <div className={`${!menuOpen ? '-top-1/3' : ''} w-80 h-1/3 fixed z-10 bg-rose-800 top-0 right-0 flex flex-col justify-center items-center duration-[1250ms] lg:hidden`}>
+    <div className={`${!menuOpen ? '-top-1/3 md:-top-full' : 'top-0'} w-80 h-1/3 md:h-full fixed z-10 bg-rose-800 right-0 flex flex-col justify-center items-center duration-[1250ms] lg:hidden`}>
       <ul className="flex flex-col space-y-6">
         <li className="text-white text-3xl" onClick={() => {
           home.current.scrollIntoView({behavior: 'smooth', block: 'start'});
