@@ -9,7 +9,7 @@ const Projects = () => {
   });
 
   return (
-    <div className={`${inView ? 'transition-opacity' : 'opacity-0'} max-w-[80%] m-auto justify-center duration-[2000ms] overflow-hidden flex-row`} ref={ref}>
+    <div className={`${inView ? 'transition-opacity' : 'opacity-0'} max-w-[80%] min-w-[40rem] m-auto justify-center duration-[2000ms] overflow-hidden flex-row`} ref={ref}>
       <h1 className="text-center text-5xl landscape:max-lg:text-3xl text-rose-800 p-4 my-2">Projects</h1>
       <ProjectCard />
     </div>

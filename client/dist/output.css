@@ -749,6 +749,38 @@ html {
   max-height: 100vh;
 }
 
+.max-h-\[30rem\] {
+  max-height: 30rem;
+}
+
+.max-h-\[20rem\] {
+  max-height: 20rem;
+}
+
+.max-h-\[10rem\] {
+  max-height: 10rem;
+}
+
+.max-h-\[5rem\] {
+  max-height: 5rem;
+}
+
+.max-h-\[30vh\] {
+  max-height: 30vh;
+}
+
+.max-h-\[30vw\] {
+  max-height: 30vw;
+}
+
+.min-h-\[50rem\] {
+  min-height: 50rem;
+}
+
+.min-h-\[30rem\] {
+  min-height: 30rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -803,6 +835,62 @@ html {
 
 .min-w-\[30em\] {
   min-width: 30em;
+}
+
+.min-w-\[30rem\] {
+  min-width: 30rem;
+}
+
+.min-w-\[20rem\] {
+  min-width: 20rem;
+}
+
+.min-w-\[10rem\] {
+  min-width: 10rem;
+}
+
+.min-w-\[5rem\] {
+  min-width: 5rem;
+}
+
+.min-w-\[30vh\] {
+  min-width: 30vh;
+}
+
+.min-w-\[30vw\] {
+  min-width: 30vw;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.min-w-\[1024px\] {
+  min-width: 1024px;
+}
+
+.min-w-\[500px\] {
+  min-width: 500px;
+}
+
+.min-w-\[3000px\] {
+  min-width: 3000px;
+}
+
+.min-w-\[100rem\] {
+  min-width: 100rem;
+}
+
+.min-w-\[50rem\] {
+  min-width: 50rem;
+}
+
+.min-w-\[40rem\] {
+  min-width: 40rem;
+}
+
+.min-w-\[40em\] {
+  min-width: 40em;
 }
 
 .max-w-\[80\%\] {
@@ -1480,8 +1568,48 @@ html {
     display: none;
   }
 
+  .lg\:h-\[5vh\] {
+    height: 5vh;
+  }
+
+  .lg\:h-\[10vh\] {
+    height: 10vh;
+  }
+
   .lg\:max-h-\[30em\] {
     max-height: 30em;
+  }
+
+  .lg\:max-h-\[10vh\] {
+    max-height: 10vh;
+  }
+
+  .lg\:max-h-\[5vh\] {
+    max-height: 5vh;
+  }
+
+  .lg\:max-h-\[5em\] {
+    max-height: 5em;
+  }
+
+  .lg\:max-h-\[30vh\] {
+    max-height: 30vh;
+  }
+
+  .lg\:max-h-\[40vh\] {
+    max-height: 40vh;
+  }
+
+  .lg\:max-h-\[50vh\] {
+    max-height: 50vh;
+  }
+
+  .lg\:max-h-\[30rem\] {
+    max-height: 30rem;
+  }
+
+  .lg\:max-h-\[20rem\] {
+    max-height: 20rem;
   }
 
   .lg\:w-11\/12 {
@@ -1490,6 +1618,34 @@ html {
 
   .lg\:min-w-\[30em\] {
     min-width: 30em;
+  }
+
+  .lg\:min-w-\[10vh\] {
+    min-width: 10vh;
+  }
+
+  .lg\:min-w-\[5vh\] {
+    min-width: 5vh;
+  }
+
+  .lg\:min-w-\[30vh\] {
+    min-width: 30vh;
+  }
+
+  .lg\:min-w-\[40vh\] {
+    min-width: 40vh;
+  }
+
+  .lg\:min-w-\[50vh\] {
+    min-width: 50vh;
+  }
+
+  .lg\:min-w-\[30rem\] {
+    min-width: 30rem;
+  }
+
+  .lg\:min-w-\[20rem\] {
+    min-width: 20rem;
   }
 
   .lg\:flex-row {
@@ -1509,6 +1665,38 @@ html {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-\[3vh\] {
+    font-size: 3vh;
+  }
+
+  .lg\:text-\[2vh\] {
+    font-size: 2vh;
+  }
+
+  .lg\:text-\[1\.5vh\] {
+    font-size: 1.5vh;
+  }
+
+  .lg\:text-\[5vh\] {
+    font-size: 5vh;
+  }
+
+  .lg\:text-\[4vh\] {
+    font-size: 4vh;
+  }
+
+  .lg\:leading-\[1vh\] {
+    line-height: 1vh;
+  }
+
+  .lg\:leading-\[3vh\] {
+    line-height: 3vh;
+  }
+
+  .lg\:leading-\[3\.5vh\] {
+    line-height: 3.5vh;
   }
 
   .lg\:text-white {
@@ -1607,6 +1795,11 @@ html {
     line-height: 2rem;
   }
 
+  .landscape\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   @media not all and (min-width: 1024px) {
     .landscape\:max-lg\:h-10 {
       height: 2.5rem;
@@ -1616,8 +1809,16 @@ html {
       max-height: 10em;
     }
 
+    .landscape\:max-lg\:max-h-\[10rem\] {
+      max-height: 10rem;
+    }
+
     .landscape\:max-lg\:min-w-\[10em\] {
       min-width: 10em;
+    }
+
+    .landscape\:max-lg\:min-w-\[10rem\] {
+      min-width: 10rem;
     }
 
     .landscape\:max-lg\:text-3xl {
@@ -1638,6 +1839,10 @@ html {
     .landscape\:max-lg\:text-base {
       font-size: 1rem;
       line-height: 1.5rem;
+    }
+
+    .landscape\:max-lg\:text-\[2vh\] {
+      font-size: 2vh;
     }
   }
 }
