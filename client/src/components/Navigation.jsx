@@ -4,7 +4,7 @@ import React from 'react';
 const Navigation = ({home, about, projects, contact, menuOpen, setMenuOpen}) => {
 
   return (
-    <nav className="flex w-full min-w-[50rem] fixed z-20 py-2.5 border-b bg-rose-800 leading-10 h-20 landscape:max-lg:h-10 lg:min-h-10 overflow:hidden">
+    <nav className="flex w-full min-w-[30rem] fixed z-20 py-2.5 border-b bg-rose-800 leading-10 h-20 landscape:max-lg:h-10 lg:min-h-10 overflow:hidden">
       <div className="container flex flex-row m-auto w-11/12 relative text-center items-center overflow:hidden">
         <div className="inline-flex text-white text-3xl landscape:max-lg:text-base absolute left-0 lg:hover:text-black lg:hover:cursor-pointer" onClick={() => {
           window.open('./assets/Jonathan Navarrete Résumé.docx.pdf');

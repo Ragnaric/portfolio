@@ -19,16 +19,16 @@ const App = () => {
     <div className="flex-col snap-y snap-mandatory overflow-scroll h-screen">
       <Navigation home={homeRef} about={aboutRef} projects={projectsRef} contact={contactRef} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} home={homeRef} about={aboutRef} projects={projectsRef} contact={contactRef} />
-      <div ref={homeRef} className="flex snap-center h-screen min-h-[30rem]">
+      <div ref={homeRef} className="flex snap-center h-screen min-h-[40rem]">
         <Header />
       </div>
-      <div ref={aboutRef} className="flex snap-center h-screen min-h-[30rem]">
+      <div ref={aboutRef} className="flex snap-center h-screen min-h-[40rem]">
         <About />
       </div>
-      <div ref={projectsRef} className="flex snap-center h-screen min-h-[30rem]">
+      <div ref={projectsRef} className="flex snap-center h-screen min-h-[40rem]">
         <Projects />
       </div>
-      <div ref={contactRef} className="flex snap-center h-screen min-h-[30rem]">
+      <div ref={contactRef} className="flex snap-center h-screen min-h-[40rem]">
         <Contact />
       </div>
     </div>
